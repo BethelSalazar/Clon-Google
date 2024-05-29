@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.header-right a {
+    text-decoration: none;
+    color: #5f6368;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.apps-icon img{
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+
+}
+.user-icon img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container {
+    text-align: center;
+    margin-top: 150px; 
+}
+
+.logo img {
+    width: 600px;
+    height: 300px;
+}
+
+.search-form {
+    margin-top: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 580px;
+    padding: 10px 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 24px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-input {
+    flex: 1;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-icons {
+    display: flex;
+    align-items: center;
+}
+
+.search-icons i {
+    color: #5f6368;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #5f6368;
+    background-color: #f8f9fa;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #e8e8e8;
+    border-color: #c6c6c6;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #5f6368;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+    margin: 0 10px;
+}
+
+footer .footer-left,
+footer .footer-right {
+    display: flex;
+}
+
+@media (max-width: 600px) {
+    .search-bar {
+        width: 90%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-left,
+    footer .footer-right {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer a {
+        margin: 5px 0;
+    }
+}
